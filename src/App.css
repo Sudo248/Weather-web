@@ -36,18 +36,8 @@
   height: 20%;
 }
 
-.CommonWeather {
-  display: grid;
-  height: 80%;
-  grid-template-columns: 30% 70%;
-}
-
 @media only screen and (min-width: 800px) {
-  .CommonWeather {
-    display: flex;
-    flex-direction: column;
-    height: 150vh;
-  }
+  
 
   .HourlyWeather {
     height: 50vh;

@@ -1,13 +1,43 @@
-.common-weather-wrapper {
-  background-color: red;
-  box-sizing: border-box;
-  flex-shrink: 0;
-  width: 100%;
-  max-width: 100%;
-  min-height: 80%;
+.CommonWeather {
+  display: grid;
   height: 80%;
-  max-height: 100%;
-  padding-right: calc(var(--bs-gutter-x) * 0.5);
-  padding-left: calc(var(--bs-gutter-x) * 0.5);
-  margin-top: var(--bs-gutter-y);
+  grid-template-columns: 30% 70%;
+}
+
+.weather-info-wrapper {
+  grid-row: 1 / 10;
+}
+
+.search-bar-wrapper {
+  grid-row: 1 / 2;
+}
+
+.weather-weakly-wrapper {
+  grid-row: 2 / 10;
+}
+
+@media only screen and (max-width: 800px) {
+  .CommonWeather {
+    display: flex;
+    flex-direction: column;
+    height: 150vh;
+  }
+
+  .weather-info-wrapper {
+    width: 100%;
+    height: calc((100% - 100px) * 0.5);
+    order: 2;
+  }
+
+  .search-bar-wrapper {
+    width: 100%;
+    height: 100px;
+    order: 1;
+  }
+
+  .weather-weakly-wrapper {
+    width: 100%;
+    height: calc((100% - 100px) * 0.5);
+    order: 3;
+  }
 }
