@@ -1,0 +1,7 @@
+.hourly-weather-wrapper {
+  background-color: yellow;
+  width: 100%;
+  min-height: 0%;
+  height: 20%;
+  max-height: 20%;
+}
