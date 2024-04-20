@@ -19,17 +19,20 @@ const WeaklyWeather = function (props) {
   }
 
   return (
-    <Row
-      justify={{
-        xs: "space-between",
-        sm: "space-between",
-        md: "space-between",
-        lg: "space-between",
-      }}
-      className="row-wrapper"
-    >
-      {weathers}
-    </Row>
+    <div className="container-weakly-weather">
+      <Row
+        justify={{
+          xs: "space-between",
+          sm: "space-between",
+          md: "space-between",
+          lg: "space-between",
+        }}
+        gutter={[16, 16]}
+        className="row-wrapper"
+      >
+        {weathers}
+      </Row>
+    </div>
   );
 };
 

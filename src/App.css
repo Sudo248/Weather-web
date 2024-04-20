@@ -6,7 +6,8 @@
   background-image: url("./assets/images/img_background.png");
   background-size: cover;
   text-align: center;
-  display: block;
+  display: flex;
+  justify-content: center;
   width: 100vw;
   height: 100vh;
   min-width: 100px;
@@ -15,6 +16,11 @@
   padding-left: max(5px, 5%);
   padding-right: max(5px, 5%);
   padding-bottom: max(5px, 5%);
+}
+
+.App-content {
+  display: block;
+  width: 70%;
 }
 
 .App-header {
@@ -36,8 +42,15 @@
   height: 20%;
 }
 
-@media only screen and (min-width: 800px) {
-  
+p {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media only screen and (max-width: 800px) {
+  .App-content {
+    width: 100%;
+  }
 
   .HourlyWeather {
     height: 50vh;

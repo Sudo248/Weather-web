@@ -1,12 +1,15 @@
+.container-search-bar {
+    grid-row: 1 / 2;
+    padding-left: 15px;
+}
+
 .input-wrapper {
     background-color: #d1ebf7;
-    width: 100%;
     border-radius: 10px;
     padding: 10px;
     box-shadow: 0px 0px 8px #ddd;
     display: flex;
     align-items: center;
-    height: 100px;
 }
 
 input {
@@ -25,4 +28,18 @@ input:focus {
 #search-icon {
     color: #65a1bd;
     margin-right: 3px;
+}
+
+::placeholder {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+    color: #1F586D;
+}
+
+@media only screen and (max-width: 800px) {
+    .container-search-bar {
+        width: 100%;
+        margin-bottom: 10px;
+        order: 1;
+    }
 }

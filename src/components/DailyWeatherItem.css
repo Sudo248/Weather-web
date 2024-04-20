@@ -1,10 +1,8 @@
 .weather-item-wrapper {
   background-color: #d1ebf7;
-  /* display: flex; */
   align-items: center;
   width: 98%;
   padding: 0.9rem;
-  background-color: rgb(165, 207, 226);
   border-radius: 15px;
 }
 

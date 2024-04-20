@@ -1,3 +1,43 @@
+.container-weather-info {
+    grid-row: 1 / 15;
+    justify-content: center;
+    display: flex;
+    padding: 0 15px;
+}
+
 .weather-info-wrapper {
-    background-color: green;
+    background-color: #d1ebf7;
+    border-radius: 16px;
+    width: 100%;
+    height: fit-content;
+    padding: 0 15px;
+}
+
+.img-double-clound {
+    width: 45%;
+    height: 45%;
+}
+
+.tempurature-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    justify-content: space-around;
+}
+
+.img-tempurature-wrapper {
+    display: flex;
+}
+
+.container-weathers-info {
+    display: block;
+    align-content: space-between;
+}
+
+@media only screen and (max-width: 800px) {
+    .container-weather-info {
+        width: 100%;
+        height: calc((100% - 100px) * 0.5);
+        order: 2;
+    }
 }

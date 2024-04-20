@@ -5,7 +5,8 @@ import "./SearchBar.css";
 const SearchBar = function SearchBar(props) {
   const [input, setInput] = useState("");
   return (
-    <div className="input-wrapper">
+    <div className="container-search-bar">
+      <div className="input-wrapper">
       <input
         type="search"
         className="form-control"
@@ -18,8 +19,9 @@ const SearchBar = function SearchBar(props) {
           console.log(input);
         }}
       />
-      
     </div>
+    </div>
+    
   );
 };
 

@@ -4,40 +4,10 @@
   grid-template-columns: 30% 70%;
 }
 
-.weather-info-wrapper {
-  grid-row: 1 / 10;
-}
-
-.search-bar-wrapper {
-  grid-row: 1 / 2;
-}
-
-.weather-weakly-wrapper {
-  grid-row: 2 / 10;
-}
-
 @media only screen and (max-width: 800px) {
   .CommonWeather {
     display: flex;
     flex-direction: column;
     height: 150vh;
-  }
-
-  .weather-info-wrapper {
-    width: 100%;
-    height: calc((100% - 100px) * 0.5);
-    order: 2;
-  }
-
-  .search-bar-wrapper {
-    width: 100%;
-    height: 100px;
-    order: 1;
-  }
-
-  .weather-weakly-wrapper {
-    width: 100%;
-    height: calc((100% - 100px) * 0.5);
-    order: 3;
   }
 }

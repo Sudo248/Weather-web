@@ -1,0 +1,13 @@
+.weather-info-item-wrapper {
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 8px 7px;
+    border-radius: 5px;
+}
+
+.weather-info-item-wrapper > p {
+    font-size: 0.8rem;
+    color: #1F586D;
+}

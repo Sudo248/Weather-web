@@ -7,8 +7,10 @@ import HourlyWeather from "./components/HourlyWeather";
 function App() {
   return (
     <div vertical className="App">
+      <div className="App-content">
         <CommonWeather className="CommonWeather" />
-        <HourlyWeather className="HourlyWeather"/>
+        <HourlyWeather className="HourlyWeather" />
+      </div>
     </div>
   );
 }
